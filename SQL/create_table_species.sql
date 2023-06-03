@@ -1,0 +1,16 @@
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Species](
+	[Id] [int] NOT NULL,
+	[Name] [varchar](max) NULL,
+	[Type] [varchar](max) NULL,
+	[SubSpeciesCount] [int] NULL,
+	[Image] [varbinary](max) NULL,
+ CONSTRAINT [PK_Species] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
